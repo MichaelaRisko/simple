@@ -1,0 +1,165 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$boston-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Boston-wallpaper-1.jpg");
+
+*{
+  outline: 1px black solid;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  background: #f7abcb;
+  z-index: 9;
+}
+
+nav a {
+  margin: 0 2em;
+}
+nav > a {
+  margin-right: auto;
+}
+
+nav ul {
+  display: inherit;
+  list-style-type: none;
+}
+
+ul li {
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  list-style-type: none;
+}
+
+header:after {
+  display:block;
+  position:fixed;
+}
+
+header {
+  height:100vh;
+  background-image: $boston-image;
+  background: #fef9fb;
+  background-size: cover;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+}
+
+.header{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom:-10px;
+  z-index: 1;
+  color: #ee4e91;
+}
+
+.about {
+  text-align: center;
+  padding: 4em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.circle {
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  background: #ee4e91;
+  margin: 2em;
+  border:.35em solid rgba(255,255,255, 0.5);
+}
+.circle i {
+    color: white;
+    padding: 30%;
+}
+
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me .text {
+  width: 50%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me .photo-of-me {
+  width: 50%;
+  height: 30em;
+  height: auto;
+  background: #fde9f1;
+}
+.about-me .photo-of-me p{
+  visibility: hidden;
+}
+
+.about-me .photo-of-me:hover p{
+  visibility: visible;
+}
+
+.feedback {
+  text-align: center;
+  padding: 2em;
+
+}
+
+.feedback div {
+    margin: 5em;
+    transition: transform .2s ease-in-out;
+}
+
+.feedback div:hover {
+    transform: translate3d(0px, -150px; 0px);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.left{
+  width: 50%;
+  height: 5em;
+  background: #fde9f1;
+}
+
+.right {
+  width: 50%;
+  height: 5em;
+  background: #ee4e91;
+}
+
+footer {
+  text-align: center;
+  padding: .5em;
+}
